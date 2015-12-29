@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.crw.Itest"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+	
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="14" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <!-- 主界面 -->
+        <activity
+            android:name="com.crw.Itest.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 更多选项 -->
+        <activity 
+             android:name="com.crw.Itest.Activity_more">
+        </activity>
+        <!-- 登陆 -->
+        <activity 
+             android:name="com.crw.Itest.userInfo.UserLogin">
+        </activity>
+        <!-- 题库导入 -->
+        <activity  
+            android:name="com.crw.DB.Import.DBImportActivity">
+        </activity>
+        <!-- 题库浏览 -->
+        <activity  
+            android:name="com.crw.Itest.question.Activity_questionshow">
+        </activity>
+        <activity  
+            android:name="com.crw.Itest.question.Activity_question_brower">
+        </activity>
+        <activity  
+            android:name="com.crw.Itest.question.Activity_question_fillblank_show">
+        </activity>
+        <activity  
+            android:name="com.crw.Itest.question.Activity_question_ask_show">
+        </activity>
+
+        <!-- 收藏界面 -->
+        <activity  
+            android:name="com.crw.Itest.question.Activity_collect_fillblank_show">
+        </activity>
+        <activity  
+            android:name="com.crw.Itest.question.Activity_collect_ask_show">
+        </activity>
+        <activity  
+            android:name="com.crw.Itest.question.Activity_collect_choice_show">
+        </activity>
+        <activity  
+            android:name="com.crw.Itest.question.Activity_collect_brower">
+        </activity>
+        <!-- 错题集界面 -->
+        <activity  
+            android:name="com.crw.Itest.question.Activity_error_fillblank_show">
+        </activity>
+        <activity  
+            android:name="com.crw.Itest.question.Activity_error_ask_show">
+        </activity>
+        <activity  
+            android:name="com.crw.Itest.question.Activity_error_choice_show">
+        </activity>
+        <activity  
+            android:name="com.crw.Itest.question.Activity_error_brower">
+        </activity>
+        <!-- 练习界面 -->
+        <activity  
+            android:name="com.crw.Itest.exercise.Activity_exercise_choice_show">
+        </activity>
+        <activity  
+            android:name="com.crw.Itest.exercise.Activity_exercise_fillblank_show">
+        </activity>
+        <activity  
+            android:name="com.crw.Itest.exercise.Activity_exercise_ask_show">
+        </activity>
+         <activity  
+            android:name="com.crw.Itest.exercise.Activity_exercise_brower">
+        </activity>
+       <!-- 题库选择 --> 
+         <activity  
+            android:name="com.crw.DB.qbselect.Activity_qbselect">
+        </activity>
+
+        
+        <!-- 分类界面 -->
+          <activity  
+            android:name="com.crw.Itest.classify.Activity_qcategory">
+        </activity>
+        <activity  
+            android:name="com.crw.Itest.classify.Activity_qcategory_ask">
+        </activity>
+        <activity  
+            android:name="com.crw.Itest.classify.Activity_qcategory_choice">
+        </activity>
+        <activity  
+            android:name="com.crw.Itest.classify.Activity_qcategory_fillblank">
+        </activity>
+         <activity  
+            android:name="com.crw.Itest.classify.Activity_category_mainpoint_fillblank">
+        </activity>
+        <activity  
+            android:name="com.crw.Itest.classify.Activity_category_mainpoint_ask">
+        </activity>
+        <activity  
+            android:name="com.crw.Itest.classify.Activity_category_mainpoint_choice">
+        </activity>
+        <activity  
+            android:name="com.crw.Itest.classify.Activity_category_mainpoint">
+        </activity>
+        <!-- 搜索界面 -->
+        <activity
+            android:name="com.crw.Itest.search.Activity_questionsearch">
+            
+        </activity>
+        <activity
+            android:name="com.crw.Itest.search.Activity_search_choice">
+            
+        </activity>
+        <activity
+            android:name="com.crw.Itest.search.Activity_search_fillblank">
+            
+        </activity>
+        <activity
+            android:name="com.crw.Itest.search.Activity_search_ask">
+            
+        </activity>
+        <!-- 考试界面 -->
+         <activity
+            android:name="com.crw.Itest.exam.Activity_exam_brower">
+            
+        </activity> 
+        <activity
+            android:name="com.crw.Itest.exam.Activity_exam">
+            
+        </activity> 
+         <activity
+            android:name="com.crw.Itest.exam.Activity_exam_fillblank">
+            
+        </activity> 
+         
+        
+    </application>
+    
+    <!-- 设置权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />   
+    
+</manifest>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:overScrollMode="always"
+    android:background="#66CCFF"
+    android:scrollbars="vertical" >
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+	    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/browse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="选择题" />
+
+        <Button
+            android:id="@+id/browsefillblank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="填空题" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/browseask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="问答题" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/qcategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="按来源分类" />
+
+        <Button
+            android:id="@+id/qmainpoint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="按知识点" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/mycollect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的收藏夹" />
+
+        <Button
+            android:id="@+id/myerrorcollect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的错题集" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/qbrower"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="顺序浏览题库" />
+
+        <Button
+            android:id="@+id/exercise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开始测试" />
+
+    </TableRow>
+
+
+
+    <TableRow
+        android:id="@+id/tableRow6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/DBImport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/DBImport" />
+
+        <Button
+            android:id="@+id/selectDB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/selectDB" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/loginbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login" />
+
+        <Button
+            android:id="@+id/qsearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="搜索" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+    </TableRow>
+
+     </TableLayout>   
+     
+    
+     <LinearLayout
+         android:id="@+id/linearLayout1"
+         android:layout_width="fill_parent"
+         android:layout_height="fill_parent"
+         android:layout_weight="12"
+         android:orientation="horizontal" >
+
+         <TextView
+             android:id="@+id/username"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:hint="这里显示用户名" />
+
+        <TextView
+            android:id="@+id/ftitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="当前时间：" />
+
+          <DigitalClock
+	        android:id="@+id/digitalClock1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="DigitalClock" />
+          
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+
+    android:orientation="vertical" >
+<LinearLayout
+     android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1"
+    android:orientation="vertical" >
+    <TextView
+        android:id="@+id/qid"
+        android:layout_width="43dp"
+        android:layout_height="wrap_content"
+        android:hint="题号" />
+
+    <TextView
+        android:id="@+id/qtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="题目内容"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+    <RadioGroup android:id="@+id/qopt"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	>
+    <RadioButton
+        android:id="@+id/qoptA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="选项A" />
+
+    <RadioButton
+        android:id="@+id/qoptB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="选项B" />
+
+    <RadioButton
+        android:id="@+id/qoptC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="选项C" />
+
+    <RadioButton
+        android:id="@+id/qoptD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="选项D" />
+	</RadioGroup>
+
+    <TextView
+        android:id="@+id/qanswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="答案为："
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/qdifficulty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="难度值："
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/qexplain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="解释："
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/qsource"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="来源："
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/qmainpoint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="题目考点："
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+   
+    
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" 
+        android:layout_weight="8">
+
+        <Button
+            android:id="@+id/previous"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="上一题" />
+
+        <Button
+            android:id="@+id/adderror"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="加错题" />
+
+        <Button
+            android:id="@+id/addcollect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="加收藏" />
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="下一题" />
+
+ </LinearLayout>
+
+</LinearLayout>

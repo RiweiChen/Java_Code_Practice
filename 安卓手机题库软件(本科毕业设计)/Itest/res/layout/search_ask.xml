@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:overScrollMode="always"
+    android:scrollbars="vertical"
+    android:id="@+id/search_ask"
+    >"
+
+    <TextView
+        android:id="@+id/qtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="题目"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/qanswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="答案"
+        android:scrollbars="vertical"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/qdifficulty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="难度"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/qexplain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="解释"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/qsource"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="题目来源："
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/qmainpoint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="题目考点"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</LinearLayout>

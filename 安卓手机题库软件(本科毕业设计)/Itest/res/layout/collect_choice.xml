@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/qid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="题号"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/qtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="题目"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/qoptA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="选项A" />
+
+    <TextView
+        android:id="@+id/qoptB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="选项B" />
+
+    <TextView
+        android:id="@+id/qoptC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="选项C" />
+
+    <TextView
+        android:id="@+id/qoptD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="选项D" />
+
+    <TextView
+        android:id="@+id/qanswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="答案"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/qimportance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="重要性"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</LinearLayout>
